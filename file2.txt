@@ -1,0 +1,4 @@
+name:- sankalp practice 
+class:- third year sem_6
+subject:- Ai,WAD,DSBDA,cns
+description:-assignment 2A
