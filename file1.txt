@@ -1,0 +1,4 @@
+name:- sankalp 
+class:- third year
+subject:- Ai,WAD,DSBDA
+description:-assignment 2A
