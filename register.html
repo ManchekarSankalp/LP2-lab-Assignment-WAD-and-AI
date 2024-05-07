@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Page</title>
+    ,<link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <center>
+    
+    <div class="container">
+        <div class="card">
+            <h1>registration Form </h1>
+
+            <form action="#">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="enter your name" >
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="enter your E-mail" >
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="enter your password" >
+                </div>
+                <div>
+                    <button type="button" onclick="saveData()" class="btn btn-primary" id="save_btn">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</center>
+</body>
+<script>
+    function saveData(){
+        let name,email,password;
+        name=document.getElementById("name").value;
+        email=document.getElementById("email").value;
+        password=document.getElementById("password").value;
+        
+        localStorage.setItem("name",name);
+        localStorage.setItem("email",email);
+        localStorage.setItem("password",password);
+    alert ("submited succesfully")
+    }
+</script>
+
+</html>
